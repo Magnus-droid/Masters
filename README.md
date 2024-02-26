@@ -2,8 +2,10 @@
 
 ## So far:
 1) Oracle cloud VPS running on 130.61.249.221
-2) Fake telent socket on port 23 reachable from all IPs
-3) Command logging based on IP
+2) Git connection set up
+3) Fake telent socket on port 23 reachable from all IPs
+4) Command logging based on IP
+   
 
 
 ## TODOs
