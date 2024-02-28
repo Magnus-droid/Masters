@@ -9,9 +9,9 @@ def handle_client(client_socket, client_address):
     # Welcome message
     client_socket.send(b"Welcome to the Fake Telnet Server!\n")
     client_socket.send(b"Enter your username: ")
-    username = client_socket.recv(1024).strip().decode()  # Convert bytes to string
+    username = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
     client_socket.send(b"Enter your password: ")
-    password = client_socket.recv(1024).strip().decode()  # Convert bytes to string
+    password = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
     
     # Check credentials
     if username == "admin" and password == "password":
@@ -20,7 +20,7 @@ def handle_client(client_socket, client_address):
 
         while True:
             client_socket.send(b"\nEnter command: ")
-            command = client_socket.recv(1024).strip().decode().lower()  # Convert bytes to string
+            command = client_socket.recv(1024).rstrip().decode().lower()  # Convert bytes to string
             
             # Log command
             logger(client_address[0], client_address[1], command)
