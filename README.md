@@ -5,7 +5,10 @@
 2) Git connection set up
 3) Fake telent socket on port 23 reachable from all IPs
 4) Command logging based on IP
-   
+5) Different IPs:
+	- set DNS server: `nameserver 8.8.8.8` in /etc/resolv.conf
+        - `sudo su`
+	- ./secondary_vnic_all_configure.sh -c   
 
 
 ## TODOs
