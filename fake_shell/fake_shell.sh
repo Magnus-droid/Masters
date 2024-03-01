@@ -21,7 +21,7 @@ current_directory="/home/$username"
 # Loop to simulate a command prompt
 while true; do
     # Display a fake command prompt with the current directory
-    echo -n "$username@$HOSTNAME:$current_directory$ "
+    echo -n "$current_directory$ "
 
     # Read user input
     read -a command_array
