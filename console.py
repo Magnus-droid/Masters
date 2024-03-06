@@ -38,7 +38,7 @@ def help(client_socket):
 \033[36mlist \033[0m\033[33m[all|{module}][dl] \033[0mList available modules.
                     [all] List all available modules parameters.
                     [module] List available module parameters.
-                    [dl] Download results.
+                    [dl] Download result.
 \033[36mg \033[0m\033[33m{module} {parameter} [(index)] \033[0mGet module parameter value
 \033[36ms \033[0m\033[33m{module} {parameter} [(index)] {value} \033[0mSet module parameter value
 \033[36mlistdb \033[0m\033[33m \033[0m            List available DB parameters
