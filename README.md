@@ -1,15 +1,15 @@
 # Low-interaction honeypot for telematic units in vehicles (Master's thesis)
 
 ## So far:
-1) Oracle cloud VPS running on 130.61.249.221
+1) Oracle cloud VPS running on 130.61.249.221 (reachable via telnet only on 150.230.146.110)
 2) Git connection set up
-3) Fake telent socket on port 23 reachable from all IPs
-4) Command logging based on IP
-5) Different IPs:
+4) Fake telent socket on port 23 reachable from all IPs
+5) Command logging based on IP
+6) Different IPs:
         - `sudo su`
 	- `./secondary_vnic_all_configure.sh -c`   
-6) Able to handle multiple clients
-7) Console view for help() function completed ![console](pics/telnet_console_view.png) 
+7) Able to handle multiple clients
+8) Console view for help() function completed ![console](pics/telnet_console_view.png) 
 
 ## TODOs 
 2) Imporve console commands
