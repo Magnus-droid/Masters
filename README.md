@@ -9,6 +9,7 @@
         - `sudo su`
 	- `./secondary_vnic_all_configure.sh -c`   
 6) Able to handle multiple clients
+7) [Console view for `help()`](/pics/telnet_console_view.png) 
 
 ## TODOs 
 2) Imporve console commands
