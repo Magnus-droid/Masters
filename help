@@ -1,0 +1,31 @@
+Basics[C4E]> help
+Help :
+cmd [option1|option2]{string}(number)
+
+Builtins :
+cversion            Console version
+help                Display help
+screen [(X)]        Change to screen X. If no argument, display screens list
+color [0|1]         Enable/Disable color output
+lang [{str}]        Set the console language
+reboot [(waitTime)] Reboot
+completion          Activate advanced completion
+exit                Quit
+
+Basics :
+1wire               Display 1wire information
+iostate             Display input/output state
+modem               Display modem state
+gpspos              Retrieve last GPS position
+list [all|{module}][dl] List available modules.
+                    [all] List all available modules parameters.
+                    [module] List available module parameters.
+                    [dl] Download result.
+g {module} {parameter} [(index)] Get module parameter value
+s {module} {parameter} [(index)] {value} Set module parameter value
+listdb              List available DB parameters
+gdb {name}          Get a DB parameter
+sdb {name} {value}  Set a DB parameter
+log [print|debug|warn|error|{str}] Display last logs
+logdump [print|debug|warn|error|{str}] Display all logs
+configure           Upload a new conf file
