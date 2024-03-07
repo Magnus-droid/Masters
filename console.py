@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from os.path import exists
+
 class bcolors:
     PURPLE = '\033[1m\033[35m'
     BLUE = '\033[36m'
@@ -11,7 +13,10 @@ class bcolors:
 
 command_path = '/home/ubuntu/Masters/command_data/'
 
-
+def is_valid_command(command):
+    if exists(command_path + command):
+        return True
+    return False
 
 def welcome(client_socket):
 	client_socket.send(b"""
@@ -59,6 +64,6 @@ def help(client_socket):
 def retrieve_response(command, client_socket, client_address):
     with open(command_path + command, 'rb') as f:
         f_content = f.read()
-    client_socket.send(f_content))
+    client_socket.send(f_content)
     f.close()
 

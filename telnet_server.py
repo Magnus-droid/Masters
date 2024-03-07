@@ -4,7 +4,7 @@ import socket
 import sys
 import threading
 from logger import logger
-from console import retrieve_response, help
+from console import retrieve_response, help, welcome, is_valid_command
 
 
 def handle_client(client_socket, client_address):
@@ -12,44 +12,27 @@ def handle_client(client_socket, client_address):
     telnet_negotiation = client_socket.recv(1024)
     print(telnet_negotiation)
     # Welcome message
-    retrieve_response('help', client_socket, client_address)
-    retrieve_response('iostate', client_socket, client_address)
-    retrieve_response('cversion', client_socket, client_address)
-    client_socket.send(b"Enter your username: ")
-    username = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
-    print(username)
-    client_socket.send(b"Enter your password: ")
-    password = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
-    print(password)
-    # Check credentials
-    while username != "admin" or password != "password":
-        client_socket.send(b"Username or password incorrect! Please try again.\n")
-        client_socket.send(b"Enter your username: ")
-        username = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
-        print(username)
-        client_socket.send(b"Enter your password: ")
-        password = client_socket.recv(1024).rstrip().decode()  # Convert bytes to string
-        print(password)
-    client_socket.send(b"\nLogin successful!\n")
-    client_socket.send(b"Available commands: version, help, quit\n")
+    welcome(client_socket)
+    help(client_socket)
 
     while True:
-        client_socket.send(b"\nEnter command: ")
+        client_socket.send(b"\033[1m\033[32mBasics\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m ")
         command = client_socket.recv(1024).rstrip().decode().lower()  # Convert bytes to string
-        
         # Log command
         logger(client_address[0], client_address[1], command)
-        
-        # Execute command
-        if command == "version":
-            client_socket.send(b"v1.2\n")
-        elif command == "help":
-            client_socket.send(b"Available commands:\n- 'help' \n- 'version' \n- 'quit' \n")
-        elif command == "quit":
-            client_socket.send(b"Goodbye!\n")
+
+        if (command == 'help'):
+            help(client_socket)
+
+        elif (command == 'exit'):
             break
+
+        elif (not is_valid_command(command)):
+            client_socket.send(b"Not a valid command\n")
+
         else:
-            client_socket.send(b"Invalid command. Type 'help' for a list of available commands..\n")
+            retrieve_response(command, client_socket, client_address)
+
     client_socket.close()
 
 def main():
