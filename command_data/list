@@ -1,5 +1,3 @@
-Basics[C4E]> list all
-.................................................................
 boot.coproc_wakeup_events=138753
 boot.permanent_shutdown=0
 boot.wakeup_input_types[0]=-1
