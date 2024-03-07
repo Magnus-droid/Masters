@@ -62,8 +62,11 @@ def help(client_socket):
 
 
 def retrieve_response(command, client_socket, client_address):
-    with open(command_path + command, 'rb') as f:
-        f_content = f.read()
-    client_socket.send(f_content)
-    f.close()
+    if command:
+        with open(command_path + command, 'rb') as f:
+            f_content = f.read()
+        client_socket.send(f_content)
+        f.close()
+    else:
+        print("No command was provided by the client")
 

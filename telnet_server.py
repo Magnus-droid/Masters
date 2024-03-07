@@ -20,7 +20,7 @@ def handle_client(client_socket, client_address):
         command = client_socket.recv(1024).rstrip().decode().lower()  # Convert bytes to string
         # Log command
         logger(client_address[0], client_address[1], command)
-
+        print(command)
         if (command == 'help'):
             help(client_socket)
 
