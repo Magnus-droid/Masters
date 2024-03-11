@@ -1,0 +1,5 @@
+Client command:b'test\r\n'
+Client command:b'1wire\r\n'
+Client command:b'gpspos\r\n'
+Client command:b'modem\r\n'
+Client command:b'cversion\r\n'

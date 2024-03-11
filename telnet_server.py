@@ -17,10 +17,7 @@ def handle_client(client_socket, client_address):
 
     while True:
         client_socket.send(b"\033[1m\033[32mBasics\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m ")
-        raw_command = client_socket.recv(1024)
-        with open("/home/ubuntu/Masters/logs/"+str(client_address)+"raw_command", "a") as f:
-            f.write(f"Client command:{raw_command}\n")
-        command = raw_command.decode().lower()  # Convert bytes to string
+        command = client_socket.recv(1024).rstrip().decode().lower()
         # Log command
         logger(client_address[0], client_address[1], command)
         print(command)
