@@ -1,8 +1,8 @@
-SBSL: 1892
-          KERNEL: 73f2f779
-                          SYSTEM: 1892
-                                      COPROC: 1892
-                                                  User serial number: 80106013713
+SBSL: 1934
+          KERNEL: 7f32f786
+                          SYSTEM: 1934
+                                      COPROC: 1934
+                                                  User serial number: 09574603306
                                                                                  Board type: C4MAX+ V1
                                                                                                       BOM: 10 - Revision: C
                                                                                                                            PCB: 52
@@ -18,7 +18,7 @@ Result : 0
  - info : ''
 Result : 0
  - device : 'release'
- - version : 'R3.1.29'
+ - version : 'R3.1.24'
  - category : 'Software'
  - info : ''
 Result : 0
@@ -33,7 +33,7 @@ Result : 0
  - info : ''
 Result : 0
  - device : 'serial'
- - version : '80106013713'
+ - version : '09574603306'
  - category : 'Hardware'
  - info : ''
 Result : 0
@@ -43,27 +43,27 @@ Result : 0
  - info : ''
 Result : 0
  - device : 'bootloader'
- - version : '1892'
+ - version : '1934'
  - category : 'System'
  - info : ''
 Result : 0
  - device : 'kernel'
- - version : '0x73f2f779'
+ - version : '0x7f32f786'
  - category : 'System'
  - info : ''
 Result : 0
  - device : 'rootfs'
- - version : '1892'
+ - version : '1934'
  - category : 'System'
  - info : ''
 Result : 0
  - device : 'coprocessor'
- - version : '1892'
+ - version : '1934'
  - category : 'System'
  - info : ''
 Result : 0
  - device : 'libplug'
- - version : '1892'
+ - version : '1934'
  - category : 'Software'
  - info : ''
 Result : 0
@@ -92,7 +92,7 @@ Result : 0
  - category : 'MD Static service'
  - info : ''
 Result : 0
- - device : 'com.mdi.services.dataEmitter'
+ - device : 'com.mdi.data.dataEmitter'
  - version : '3.1.29'
  - category : 'MD Internal Application'
  - info : ''
