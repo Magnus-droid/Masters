@@ -56,8 +56,12 @@ def help(client_socket):
 \033[36mlog \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay last log
 \033[36mlogdump \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay all logs
 \033[36mconfigure \033[0m\033[33m \033[0m         Upload a new conf file
-
-
+Segmentation fault (core dumped)
+Error code: 11
+Memory address: 0x7fff3b9645d8
+Stack trace:
+    1. main() at /usr/bin/update
+    2. getPermission() at /home/user/updater/mdi.UpdateHandler:141
 """)
 
 
@@ -66,7 +70,15 @@ def retrieve_response(command, client_socket, client_address):
         with open(command_path + command, 'rb') as f:
             f_content = f.read()
         client_socket.send(f_content)
-        f.close()
     else:
         print("No command was provided by the client")
 
+
+def retrieve_color_response(command, client_socket, client_address):
+    if command:
+        with open(command_path + command, 'r') as f:
+            f_content = f.read()
+        f_bytes = f_content.encode('utf-8')
+        client_socket.send(f_bytes)
+    else:
+        print("No command was provided by the user")

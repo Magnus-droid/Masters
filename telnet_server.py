@@ -3,8 +3,8 @@
 import socket
 import sys
 import threading
-from logger import logger
-from console import retrieve_response, help, welcome, is_valid_command
+from imports.logger import logger
+from imports.console import retrieve_response, help, welcome, is_valid_command
 
 
 def handle_client(client_socket, client_address):
@@ -16,23 +16,27 @@ def handle_client(client_socket, client_address):
     help(client_socket)
 
     while True:
-        client_socket.send(b"\033[1m\033[32mBasics\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m ")
-        command = client_socket.recv(1024).rstrip().decode().lower()
-        # Log command
-        logger(client_address[0], client_address[1], command)
-        print(command)
-        if (command == 'help'):
-            help(client_socket)
+        try:
+            client_socket.send(b"\033[1m\033[32mBasics\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m ")
+            command = client_socket.recv(1024).rstrip().decode().lower()
+            # Log command
+            logger(client_address[0], client_address[1], command)
+            print(command)
+            if (command == 'help'):
+                help(client_socket)
 
-        elif (command == 'exit'):
+            elif (command == 'exit'):
+                break
+
+            elif (not is_valid_command(command)):
+                client_socket.send(b"Not a valid command\n")
+
+            else:
+                retrieve_response(command, client_socket, client_address)
+
+        except Exception as e:
+            print(f"Error: {e}")
             break
-
-        elif (not is_valid_command(command)):
-            client_socket.send(b"Not a valid command\n")
-
-        else:
-            retrieve_response(command, client_socket, client_address)
-
     client_socket.close()
 
 def main():
