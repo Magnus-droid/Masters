@@ -4,7 +4,7 @@ import socket
 import sys
 import threading
 from imports.logger import logger
-from imports.console import retrieve_response, help, welcome, is_valid_command
+from imports.console import *
 
 
 def handle_client(client_socket, client_address):
@@ -27,6 +27,12 @@ def handle_client(client_socket, client_address):
 
             elif (command == 'exit'):
                 break
+
+            elif (command == 'screen 1'):
+                screen_1(client_socket)
+
+            elif (command == 'screen 2'):
+                screen_2(client_socket)
 
             elif (not is_valid_command(command)):
                 client_socket.send(b"Not a valid command\n")

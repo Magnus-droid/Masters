@@ -6,3 +6,8 @@ exit
 exit
 cd temp
 exit
+screen 1
+exit
+screen 1
+exit
+screen 2

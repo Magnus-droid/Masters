@@ -79,22 +79,31 @@ def screen_1(client_socket):
 \033[0m\033[36mip \033[0m\033[33m[{str}] \033[0m         Display all ip addresses. If str, display only str address.
 \033[36mstats \033[0m\033[33m \033[0m             Display stats.
 \033[36mllog \033[0m\033[33m[soft|gps|update|kstart|mAT|mPPP] \033[0mDisplay last logs of:
-                                           software, gps, kernel start, modem AT, or modem PPP
+                    software, gps, kernel start, modem AT, or modem PPP
 \033[36mskey \033[0m\033[33m[update|delete] \033[0mUpdate|Delete server key
 \033[36mukey \033[0m\033[33m[update|delete] \033[0mUpdate|Delete user key
-\033[36mlogs \033[0m\033[33m[get|delete][all|{filename}|crashes] \033m[0mRetrieve or Delete logs of software
+\033[36mlogs \033[0m\033[33m[get|delete][all|{filename}|crashes] \033[0mRetrieve or Delete logs of software
 \033[36mstopsoft \033[0m\033[33m \033[0m          Stop the software
 \033[36musercpn \033[0m\033[33m[list|start|stop|remove][all|{cpnName}] \033[0mList user components
 \033[36mgprsupdate \033[0m\033[33m[start|stop] \033[0mEnable / Disable GRPS update
 \033[36mgeomap \033[0m\033[33m[update|delete] \033[0mUpdate / Delete a geofencing map
 \033[36mupdate \033[0m\033[33m \033[0m            Upload an update package
 \033[36mrestore \033[0m\033[33m[all|write|pdm|db|user] \033[0mRestore parameters of write, db or pbm
-\033[36mrestoreFull \033[m\033[33m \033[0m        Restore device to the initial configuration state
-\033[36version \033[m\033[33m \033[0m             Display software/hardware version
-\033[36mremote \033[m\033[33m[{ip}] \033[0m       Console on remote device
-\033[36mcpu \033m[m\033[33m[{cpnName}] \033[0m    Get CPU usage for group
-""") 
+\033[36mrestoreFull \033[m\033[33m \033[0m       Restore device to the initial configuration state
+\033[36mversion \033[m\033[33m \033[0m           Display software/hardware version
+\033[36mremote \033[m\033[33m[{ip}] \033[0m      Console on remote device
+\033[36mcpu \033[m\033[33m[{cpnName}] \033[0m    Get CPU usage for group
+""")
 
+def screen_2(client_socket):
+    client_socket.send(b"""
+\033[1m\033[31mCommands :
+\033[0m\033[36mclist \033[0m\033[33m \033[0m             List available commands
+\033[36mchelp \033[0m\033[33m{cmdName} \033[0m    Display command help
+\033[36mcxelp \033[0m\033[33m{cmdRName} \033[0m   Find and display command help
+\033[36mcrun \033[0m\033[33m{cmdName}[{cmdArgs}] \033[0mRun the command
+\033[36mcexe \033[0m\033[33m{cmdRName}[{cmdArgs}] \033[0mFind and run the command (example: cexe .*_EnergyReferee.cmd...)
+""")
 
 
 
