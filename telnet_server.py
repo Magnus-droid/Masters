@@ -20,13 +20,12 @@ def handle_client(client_socket, client_address):
 
     while True:
         try:
-            command = client_socket.recv(1024).rstrip().decode().lower()
+            command = client_socket.recv(1024).decode().lower()
             # Log command
             logger(client_address[0], client_address[1], command)
             print(command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
-                
             elif (command == 'exit'):
                 break
 
