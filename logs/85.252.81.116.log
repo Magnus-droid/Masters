@@ -1,23 +1,6 @@
-85.252.81.116:56252: test
-85.252.81.116:56252: 123
-85.252.81.116:56252: exit
-85.252.81.116:56298: exit
-exit
-exit
-cd temp
-exit
-screen 1
-exit
-screen 1
-exit
-screen 2
-iostate
-screen 1
-screen 2
-help
-screen
-screen 1
-screen 2
-help
-exity
-exit
+r
+q
+
+
+
+
