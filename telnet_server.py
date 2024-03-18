@@ -5,15 +5,15 @@ import sys
 import threading
 from imports.logger import logger
 from imports.console import *
-
+from imports.color_strings import color_strings
 
 def handle_client(client_socket, client_address):
     # Discard initial data (e.g., Telnet negotiation strings)
     telnet_negotiation = client_socket.recv(1024)
     print(telnet_negotiation)
     # Welcome message
-    welcome(client_socket)
-    help(client_socket)
+    client_socket.send(b'\033[1m\033[35mWelcome on console\n')
+    client_socket.send(color_strings.get('help').encode('utf-8'))
 
     while True:
         try:
@@ -22,17 +22,11 @@ def handle_client(client_socket, client_address):
             # Log command
             logger(client_address[0], client_address[1], command)
             print(command)
-            if (command == 'help'):
-                help(client_socket)
+            if (command in color_strings):
+                client_socket.send(color_strings.get(command).encode('utf-8'))
 
             elif (command == 'exit'):
                 break
-
-            elif (command == 'screen 1'):
-                screen_1(client_socket)
-
-            elif (command == 'screen 2'):
-                screen_2(client_socket)
 
             elif (not is_valid_command(command)):
                 client_socket.send(b"Not a valid command\n")

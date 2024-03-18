@@ -1,36 +1,7 @@
-#!/usr/bin/env python3
-
-from os.path import exists
-import imports.color_strings 
 
 
-class bcolors:
-    PURPLE = '\033[1m\033[35m'
-    BLUE = '\033[36m'
-    YELLOW = '\033[33m'
-    RED = '\033[1m\033[31m'
-    B_GREEN = '\033[1m\033[32m'
-    D_GREEN = '\033[32m'
-    ENDC = '\033[0m'
-
-command_path = '/home/ubuntu/Masters/command_data/'
-
-def is_valid_command(command):
-    if command in color_strings.color_strings:
-        return True
-    elif exists(command_path + command):
-        return True
-    return False
-
-def welcome(client_socket):
-	client_socket.send(b"""
-\033[1m\033[35mWelcome on console
-
-""")
-
-def help(client_socket):
-    client_socket.send(b"""
-\033[0m\033[1m\033[31mHelp :
+color_strings = {"help":
+"""\033[0m\033[1m\033[31mHelp :
 \033[0m\033[36mcmd \033[0m\033[33m[option1|option2]{string}(number) \033[0m
 
 \033[1m\033[31mBuiltins :
@@ -66,20 +37,16 @@ Memory address: 0x7fff3b9645d8
 Stack trace:
     1. main() at /usr/bin/update
     2. getPermission() at /home/user/updater/mdi.UpdateHandler:141
-""")
+""",
 
-
-def screen(client_socket):
-    client_socket.send(b"""
-\033[36mscreen 0\033[0m    Basics
+"screen":
+"""\033[36mscreen 0\033[0m    Basics
 \033[36mscreen 1\033[0m    Advanced
 \033[36mscreen 2\033[0m    Commands
-""")
+""",
 
-
-def screen_1(client_socket):
-    client_socket.send(b"""
-\033[1m\033[31mAdvanced :
+"screen 1":
+"""\033[1m\033[31mAdvanced :
 \033[0m\033[36mip \033[0m\033[33m[{str}] \033[0m         Display all ip addresses. If str, display only str address.
 \033[36mstats \033[0m\033[33m \033[0m             Display stats.
 \033[36mllog \033[0m\033[33m[soft|gps|update|kstart|mAT|mPPP] \033[0mDisplay last logs of:
@@ -97,25 +64,14 @@ def screen_1(client_socket):
 \033[36mversion \033[m\033[33m \033[0m           Display software/hardware version
 \033[36mremote \033[m\033[33m[{ip}] \033[0m      Console on remote device
 \033[36mcpu \033[m\033[33m[{cpnName}] \033[0m    Get CPU usage for group
-""")
 
-def screen_2(client_socket):
-    client_socket.send(b"""
-\033[1m\033[31mCommands :
+""",
+
+"screen 2":
+"""\033[1m\033[31mCommands :
 \033[0m\033[36mclist \033[0m\033[33m \033[0m             List available commands
 \033[36mchelp \033[0m\033[33m{cmdName} \033[0m    Display command help
 \033[36mcxelp \033[0m\033[33m{cmdRName} \033[0m   Find and display command help
 \033[36mcrun \033[0m\033[33m{cmdName}[{cmdArgs}] \033[0mRun the command
 \033[36mcexe \033[0m\033[33m{cmdRName}[{cmdArgs}] \033[0mFind and run the command (example: cexe .*_EnergyReferee.cmd...)
-""")
-
-
-
-def retrieve_response(command, client_socket, client_address):
-    if command:
-        with open(command_path + command, 'rb') as f:
-            f_content = f.read()
-        client_socket.send(f_content)
-    else:
-        print("No command was provided by the client")
-
+"""}
