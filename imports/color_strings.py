@@ -74,4 +74,10 @@ Stack trace:
 \033[36mcxelp \033[0m\033[33m{cmdRName} \033[0m   Find and display command help
 \033[36mcrun \033[0m\033[33m{cmdName}[{cmdArgs}] \033[0mRun the command
 \033[36mcexe \033[0m\033[33m{cmdRName}[{cmdArgs}] \033[0mFind and run the command (example: cexe .*_EnergyReferee.cmd...)
+""",
+
+"welcome":
+"""\033[1m\033[35mWelcome on console
+
+
 """}

@@ -12,19 +12,21 @@ def handle_client(client_socket, client_address):
     telnet_negotiation = client_socket.recv(1024)
     print(telnet_negotiation)
     # Welcome message
-    client_socket.send(b'\033[1m\033[35mWelcome on console\n')
+    client_socket.send(color_strings.get('welcome').encode('utf-8'))
     client_socket.send(color_strings.get('help').encode('utf-8'))
+    curr_env = 'Basics'
+    test = "\033[1m\033[32m"+curr_env+"\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m "
+    client_socket.send(test.encode('utf-8'))
 
     while True:
         try:
-            client_socket.send(b"\033[1m\033[32mBasics\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m ")
             command = client_socket.recv(1024).rstrip().decode().lower()
             # Log command
             logger(client_address[0], client_address[1], command)
             print(command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
-
+                
             elif (command == 'exit'):
                 break
 
@@ -33,6 +35,10 @@ def handle_client(client_socket, client_address):
 
             else:
                 retrieve_response(command, client_socket, client_address)
+
+            curr_env = environment_switcher(client_socket, command, curr_env)
+            test2 = "\033[1m\033[32m"+curr_env+"\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m "
+            client_socket.send(test2.encode('utf-8'))
 
         except Exception as e:
             print(f"Error: {e}")
