@@ -62,8 +62,9 @@ def main():
             client_thread = threading.Thread(target=handle_client, args=(client_socket, client_address))
             client_thread.start()
 
-    except KeyboardInterrupt:
-        print("\n[*] Exiting...")
+    except Exception as e:
+        print("\n[*] Exiting...\n")
+        print(f"Exception: {e}")
         server_socket.close()
         sys.exit()
 
