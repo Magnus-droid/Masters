@@ -20,7 +20,7 @@ def handle_client(client_socket, client_address):
 
     while True:
         try:
-            command = client_socket.recv(1024).decode().lower()
+            command = client_socket.recv(1024).rstrip().decode().lower()
             # Log command
             logger(client_address[0], client_address[1], command)
             print(command)
