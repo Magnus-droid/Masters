@@ -47,3 +47,7 @@ quit
 exit
 exit
 exit
+test
+screen 1
+exit
+exit
