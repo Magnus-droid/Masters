@@ -53,3 +53,14 @@ exit
 exit
 exit
 exit
+screen 1
+test
+cversion
+exit
+test
+screen 3
+screen 2
+clist
+ls
+clear
+exit
