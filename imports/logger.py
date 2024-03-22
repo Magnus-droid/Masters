@@ -7,6 +7,5 @@ def logger(ip_address, port, command):
             log_file.write(f"{command}\n")
     else:
         with open(f"/home/ubuntu/Masters/logs/no_command_IPs.log", "a") as f:
-            f.write(f"{ip_address}\n")
-            sleep(1)
+            f.write(f"{ip_address}{command}\n")
 

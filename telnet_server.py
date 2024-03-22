@@ -8,11 +8,11 @@ from imports.color_strings import color_strings
 
 def handle_client(client_socket, client_address):
     #telnet_options = bytes([255, 254, 1, 255, 251, 34])
-    client_socket.sendall(b'\xff\xfb\x03\xff\xfc\x01\xff\xfb\x22') #WILL SUPRESS GO AHEAD, WONT ECHO, WILL LINEMODE
+    client_socket.sendall(b'\xff\xfc\x01\xff\xfb\x22') # WONT ECHO, WILL LINEMODE
     t = client_socket.recv(1024)  
     telnet_negotiation = client_socket.recv(1024)
-    #print(t)
-    #print(telnet_negotiation)
+#    print(t)
+#    print(telnet_negotiation)
     client_socket.send(color_strings.get('welcome').encode('utf-8'))
     client_socket.send(color_strings.get('help-vehicle').encode('utf-8'))
     curr_env = 'Basics'
@@ -25,7 +25,7 @@ def handle_client(client_socket, client_address):
             # Log command
 #            print("command has been received")
             logger(client_address[0], client_address[1], command)
-            #print(command)
+            print(command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
             elif (command == 'exit'):
@@ -42,7 +42,7 @@ def handle_client(client_socket, client_address):
             client_socket.send(test2.encode('utf-8'))
 
         except Exception as e:
- #           print(f"Error: {e}")
+#            print(f"Error: {e}")
             break
     client_socket.close()
 
@@ -59,13 +59,13 @@ def main():
     try:
         while True:
             client_socket, client_address = server_socket.accept()
-            #print(f"[*] Accepted connection from {client_address[0]}:{client_address[1]}")
+#            print(f"[*] Accepted connection from {client_address[0]}:{client_address[1]}")
             
             client_thread = threading.Thread(target=handle_client, args=(client_socket, client_address))
             client_thread.start()
 
     except Exception as e:
-        #print("\n[*] Exiting...\n")
+#        print("\n[*] Exiting...\n")
   #      print(f"Exception: {e}")
         server_socket.close()
         sys.exit()
