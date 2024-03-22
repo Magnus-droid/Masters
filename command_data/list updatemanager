@@ -1,0 +1,3 @@
+updateManager.autoUpdate=1
+updateManager.updateFrequency=86400
+updateManager.updateServer=updates.company.com

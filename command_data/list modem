@@ -1,0 +1,9 @@
+modem.cnfapn=inet.t-d1.de
+modem.cnfapnauth=pap
+modem.cnfapnlogin=t-d1
+modem.cnfapnpass=t-d1
+modem.dataWdgAutoRefresh=0
+modem.dns_operator=0
+modem.enableStateMachineEvents=0
+modem.networkingProfile=0
+modem.timePausePPP=60

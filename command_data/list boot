@@ -1,0 +1,5 @@
+boot.coproc_wakeup_events=98765
+boot.permanent_shutdown=1
+boot.wakeup_voltage_absolute_mV=13500
+boot.wakeup_voltage_delta_mV=100
+boot.wakeup_voltage_delta_t=10

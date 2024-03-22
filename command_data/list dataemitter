@@ -1,0 +1,7 @@
+dataEmitter.allowedSendDelay=-1
+dataEmitter.behaviour=2
+dataEmitter.boardVersion=0
+dataEmitter.conditions=0
+dataEmitter.dataFormatter=com.company.data.BinaryDataFormatter
+dataEmitter.dataProtocol=com.company.data.BinaryDataProtocol
+dataEmitter.dbValues=1

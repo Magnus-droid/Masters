@@ -1,4 +1,3 @@
-
 boot.coproc_wakeup_events=98765
 boot.permanent_shutdown=1
 boot.wakeup_voltage_absolute_mV=13500
