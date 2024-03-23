@@ -1,0 +1,57 @@
+root
+
+zsun1188
+enable
+system
+shell
+sh
+/bin/busybox boat
+guest
+
+12345
+enable
+system
+shell
+sh
+/bin/busybox boat
+root
+
+zte
+enable
+system
+shell
+sh
+/bin/busybox boat
+root
+
+vizxv
+enable
+system
+shell
+sh
+
+/bin/busybox boat
+root
+
+tazz@23495859
+enable
+system
+shell
+sh
+/bin/busybox boat
+root
+
+tazz@23
+enable
+system
+shell
+sh
+/bin/busybox boat
+admin
+
+2601hx
+enable
+system
+shell
+sh
+/bin/busybox boat
