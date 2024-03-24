@@ -208,3 +208,8 @@ exit
 test
 exi
 exit
+enable
+cat /home/ubuntu/masters/telnet_server.py
+exit
+ls
+exit

