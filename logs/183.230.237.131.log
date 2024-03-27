@@ -1,0 +1,78 @@
+root
+
+123456
+enable
+system
+shell
+sh
+/bin/busybox botnet
+support
+
+support
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+pass
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+1111
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+hi3518
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+enable
+system
+shell
+sh
+/bin/busybox botnet
+guest
+
+guest
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+password
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+12345
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+zlxx.
+enable
+system
+shell
+sh
+/bin/busybox botnet

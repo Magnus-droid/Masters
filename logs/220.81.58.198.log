@@ -1,0 +1,20 @@
+admin
+
+admin
+sh
+shell
+enable
+system
+ping; sh
+
+/bin/busybox cat /proc/self/exe || cat /proc/self/exe
+admin
+
+admin
+sh
+shell
+enable
+system
+ping; sh
+
+/bin/busybox cat /proc/self/exe || cat /proc/self/exe

