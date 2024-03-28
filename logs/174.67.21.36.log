@@ -1,0 +1,80 @@
+root
+
+vizxv
+enable
+system
+shell
+sh
+/bin/busybox mirai
+root
+
+anko
+enable
+system
+shell
+sh
+/bin/busybox mirai
+admin
+
+123456
+enable
+system
+shell
+sh
+/bin/busybox mirai
+root
+
+password
+enable
+system
+shell
+sh
+/bin/busybox mirai
+admin
+
+123456
+enable
+system
+shell
+sh
+/bin/busybox mirai
+root
+
+jvbzd
+enable
+system
+shell
+sh
+/bin/busybox mirai
+user1
+
+093777955500
+enable
+system
+shell
+sh
+/bin/busybox mirai
+admin
+
+vivo12345
+enable
+system
+shell
+sh
+/bin/busybox mirai
+root
+
+klv1234
+enable
+system
+shell
+sh
+/bin/busybox mirai
+root
+
+888888
+enable
+system
+shell
+sh
+/bin/busybox mirai

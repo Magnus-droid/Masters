@@ -214,3 +214,9 @@ exit
 ls
 exit
 exit
+enable
+list dl
+list module
+list all
+list modem
+exit
