@@ -31,12 +31,7 @@ color_strings = {"help-vehicle":
 \033[36mlog \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay last log
 \033[36mlogdump \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay all logs
 \033[36mconfigure \033[0m\033[33m \033[0m         Upload a new conf file
-Segmentation fault (core dumped)
-Error code: 11
-Memory address: 0x7fff3b9645d8
-Stack trace:
-    1. main() at /usr/bin/update
-    2. getPermission() at /home/user/updater/mdi.UpdateHandler:141
+
 """,
 
 "screen":
