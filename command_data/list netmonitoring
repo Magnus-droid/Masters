@@ -1,4 +1,0 @@
-netMonitoring.active=0
-netMonitoring.dataThreshold=10240
-netMonitoring.deviceReset=1
-netMonitoring.monitorPPP=1

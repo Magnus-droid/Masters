@@ -1,9 +1,0 @@
-sensors.x_detection_threshold=10
-sensors.x_detection_threshold_wake_up=15
-sensors.x_detection_time=7
-sensors.y_detection_threshold=10
-sensors.y_detection_threshold_wake_up=15
-sensors.y_detection_time=7
-sensors.z_detection_threshold=10
-sensors.z_detection_threshold_wake_up=15
-sensors.z_detection_time=7

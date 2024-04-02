@@ -1,7 +1,0 @@
-Commands :
-clist               List available commands
-chelp {cmdName}     Display command help
-cxelp {cmdRName}    Find and display command help
-crun {cmdName}[{cmdArgs}] Run the command
-cexe {cmdRName}[{cmdArgs}] Find and run the command (example : cexe .*_EnergyReferee.cmd ...)
-

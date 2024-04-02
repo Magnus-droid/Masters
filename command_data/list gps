@@ -1,7 +1,0 @@
-gps.allowLowPower=0
-gps.data_source=5
-gps.default_antenna_source=0
-gps.file_data_source=data/gpspos/file-1.dat
-gps.pdop_filter=0
-gps.rebootOnGpsexeError=2
-gps.satnum_filter=0
