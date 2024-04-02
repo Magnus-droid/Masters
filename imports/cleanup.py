@@ -48,7 +48,7 @@ def generate_summary(logs_dir, ip_summary_file, command_summary_file):
             os.remove(filepath)
 
     # Write unique attacker IPs to file
-    with open(ip_summary_file, 'w') as ip_summary:
+    with open(ip_summary_file, 'a') as ip_summary:
         for ip in attacker_ips:
             ip_summary.write(ip + '\n')
 
