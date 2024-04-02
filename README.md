@@ -12,6 +12,7 @@
 8) Console view for help() function completed ![console](pics/telnet_console_view.png) 
 9) Start server on OCI launch.:
 	`crontab -e` -> `@reboot /home/ubuntu/Masters/run_vehicle_server.py`
+10) added telnet connection after running script via `-A INPUT -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT` after the similar ssh line in the file `/etc/iptables/rules.v4`
 
 ## TODOs 
 2) Imporve console commands
