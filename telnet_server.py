@@ -25,14 +25,13 @@ def handle_client(client_socket, client_address):
             # Log command
 #            print("command has been received")
             logger(client_address[0], client_address[1], command)
-            print(command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
-            elif (command == 'exit'):
+            elif (command == 'exit' or command == 'reboot'):
                 break
 
             elif (not is_valid_command(command)):
-                client_socket.send(b"Not a valid command\n")
+                client_socket.send(b"Currently unavailable or not a valid command\n")
 
             else:
                 retrieve_response(command, client_socket, client_address)
