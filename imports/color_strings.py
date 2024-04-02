@@ -31,12 +31,7 @@ color_strings = {"help-vehicle":
 \033[36mlog \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay last log
 \033[36mlogdump \033[0m\033[33m[print|debug|warn|error|{str}] \033[0mDisplay all logs
 \033[36mconfigure \033[0m\033[33m \033[0m         Upload a new conf file
-Segmentation fault (core dumped)
-Error code: 11
-Memory address: 0x7fff3b9645d8
-Stack trace:
-    1. main() at /usr/bin/update
-    2. getPermission() at /home/user/updater/mdi.UpdateHandler:141
+
 """,
 
 "screen":
@@ -83,13 +78,13 @@ Stack trace:
 """,
 
 "help-cloud":
-"""\033[0m\033[1m\033[31mWelcome on console\033[0m
+"""\033[0m\033[1m\033[35mWelcome on console\033[0m
 
 \033[0m\033[1m\033[31mHelp :\033[0m
 \033[0m\033[36mcmd \033[0m\033[33m[option1|option2]{string}(number) \033[0m
 
 \033[1m\033[31mBuiltins :\033[0m
-\033[0m\033[36mcversion \033[0m\033[33m\033[0m          Console version
+\033[0m\033[36mcversion \033[0m\033[33m\033[0m           Console version
 \033[36mhelp \033[0m\033[33m\033[0m               Display help
 \033[36mscreen \033[0m\033[33m[(X)] \033[0m       Change to screen X. If no argument, display screen list
 \033[36mcolor \033[0m\033[33m[0|1] \033[0m        Enable/Disable color output

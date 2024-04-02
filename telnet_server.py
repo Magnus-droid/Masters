@@ -13,8 +13,7 @@ def handle_client(client_socket, client_address):
     telnet_negotiation = client_socket.recv(1024)
 #    print(t)
 #    print(telnet_negotiation)
-    client_socket.send(color_strings.get('welcome').encode('utf-8'))
-    client_socket.send(color_strings.get('help-vehicle').encode('utf-8'))
+    client_socket.send(color_strings.get('help-cloud').encode('utf-8'))
     curr_env = 'Basics'
     test = "\033[1m\033[32m"+curr_env+"\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m "
     client_socket.send(test.encode('utf-8'))
@@ -25,7 +24,7 @@ def handle_client(client_socket, client_address):
             # Log command
 #            print("command has been received")
             logger(client_address[0], client_address[1], command)
-            print(command)
+            #print(command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
             elif (command == 'exit'):

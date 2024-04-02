@@ -62,10 +62,10 @@ def generate_summary(logs_dir, ip_summary_file, command_summary_file):
 logs_directory = "/home/ubuntu/Masters/logs"
 
 # File to store summary of unique attacker IPs
-ip_summary_file = "/home/ubuntu/Masters/logs/ip_summary_file.txt"
+ip_summary_file = "/home/ubuntu/Masters/logs/ip_summary_file_console.txt"
 
 # File to store summary of command attempts
-command_summary_file = "/home/ubuntu/Masters/logs/command_summary_file.txt"
+command_summary_file = "/home/ubuntu/Masters/logs/command_summary_file_console.txt"
 
 # Generate the summary
 generate_summary(logs_directory, ip_summary_file, command_summary_file)
