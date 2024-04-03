@@ -1,3 +1,17 @@
-cversion: 1
+cversion: 2
 status: 1
-exit: 1
+exit: 4
+root: 1
+: 2
+juantech: 1
+enable: 2
+system: 2
+shell: 2
+sh: 2
+/bin/busybox botnet: 1
+completion: 1
+help: 2
+cisco: 2
+linuxshell: 1
+ping ;sh: 1
+/bin/busybox: 1

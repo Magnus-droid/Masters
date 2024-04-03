@@ -12,32 +12,37 @@ def handle_client(client_socket, client_address):
     t = client_socket.recv(1024)  
     telnet_negotiation = client_socket.recv(1024)
     client_socket.send(color_strings.get('welcome').encode('utf-8'))
-    client_socket.send(color_strings.get('help-cloud').encode('utf-8'))
+    client_socket.send(color_strings.get('help').encode('utf-8'))
 
     while True:
 
         client_socket.send(color_strings.get('line_start').encode('utf-8'))
         try:
+
             command = client_socket.recv(1024).rstrip().decode().lower()
             logger(client_address[0], client_address[1], command)
 
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
-            elif (command == 'exit'):
+
+            elif (command == 'exit' or command == 'reboot'):
                 break
 
             elif (not is_valid_command(command)):
-                client_socket.send(b"Not a valid command\n")
-
+                client_socket.send(b"Not a valid command or currently unavailable.\n")
+             
             else:
                 retrieve_response(command, client_socket, client_address)
 
 
         except Exception as e:
             break
+
     client_socket.close()
 
+
 def main():
+
     host = '0.0.0.0'
     port = 23
     
@@ -55,6 +60,7 @@ def main():
     except Exception as e:
         server_socket.close()
         sys.exit()
+
 
 if __name__ == "__main__":
     main()

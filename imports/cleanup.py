@@ -15,8 +15,8 @@ def update_command_counts(command_summary_file, new_command_counts):
     for command, count in new_command_counts.items():
         existing_command_counts[command] = existing_command_counts.get(command, 0) + count
 
-    # Write updated command counts to the file
-    with open(command_summary_file, 'a') as command_summary:
+    # Overwrite updated command counts to the file
+    with open(command_summary_file, 'w') as command_summary:
         for command, count in existing_command_counts.items():
             command_summary.write(f"{command}: {count}\n")
 
@@ -47,7 +47,7 @@ def generate_summary(logs_dir, ip_summary_file, command_summary_file):
             os.chmod(filepath, 0o777)
             os.remove(filepath)
 
-    # Write unique attacker IPs to file
+    # Append unique attacker IPs to file
     with open(ip_summary_file, 'a') as ip_summary:
         for ip in attacker_ips:
             ip_summary.write(ip + '\n')

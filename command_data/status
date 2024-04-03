@@ -1,0 +1,155 @@
+
+VIN=3H7Y9E4W5R6T8Q0X
+Make=Toyota
+Model=Corolla
+Year=2017
+Mileage=55000
+Fuel Level=70%
+Engine Status=Running
+Battery Level=85%
+Last Service=2023-09-20
+IP Address=81.122.35.215
+
+VIN=2N4P5K8J1D6F7B9Z
+Make=Honda
+Model=Accord
+Year=2018
+Mileage=40000
+Fuel Level=75%
+Engine Status=Stopped
+Battery Level=95%
+Last Service=2023-03-25
+IP Address=81.54.76.101
+
+VIN=6A3R8H5Q9S2J4D1M
+Make=Ford
+Model=Mustang
+Year=2019
+Mileage=30000
+Fuel Level=80%
+Engine Status=Running
+Battery Level=90%
+Last Service=2023-11-10
+IP Address=81.201.65.144
+
+VIN=5F8U2N3Q1Y4W7E6V
+Make=Chevrolet
+Model=Silverado
+Year=2016
+Mileage=65000
+Fuel Level=60%
+Engine Status=Stopped
+Battery Level=80%
+Last Service=2023-06-15
+IP Address=81.78.199.89
+
+VIN=9B1D2T6U4V5N7X8Z
+Make=Volkswagen
+Model=Jetta
+Year=2018
+Mileage=38000
+Fuel Level=75%
+Engine Status=Running
+Battery Level=85%
+Last Service=2023-12-05
+IP Address=81.156.43.207
+
+VIN=8C4V6N2B7W9Q5E3R
+Make=BMW
+Model=3 Series
+Year=2019
+Mileage=25000
+Fuel Level=85%
+Engine Status=Running
+Battery Level=95%
+Last Service=2023-08-20
+IP Address=81.99.76.32
+
+VIN=7H5W1Z3E4V6U9T2M
+Make=Mercedes-Benz
+Model=C-Class
+Year=2017
+Mileage=50000
+Fuel Level=70%
+Engine Status=Stopped
+Battery Level=90%
+Last Service=2023-04-10
+IP Address=81.155.28.75
+
+VIN=4R9U7K2J8N5S1P3L
+Make=Audi
+Model=A4
+Year=2018
+Mileage=42000
+Fuel Level=80%
+Engine Status=Running
+Battery Level=85%
+Last Service=2023-02-15
+IP Address=81.62.187.119
+
+VIN=1Y4W9Q3E7U5N2B6X
+Make=Hyundai
+Model=Elantra
+Year=2016
+Mileage=60000
+Fuel Level=65%
+Engine Status=Stopped
+Battery Level=80%
+Last Service=2023-10-05
+IP Address=81.180.58.194
+
+VIN=2C4V5N7B9K1D3M6X
+Make=Kia
+Model=Optima
+Year=2019
+Mileage=32000
+Fuel Level=75%
+Engine Status=Running
+Battery Level=90%
+Last Service=2023-07-20
+IP Address=81.88.122.37
+
+VIN=3A1S2P4L5B7D8M9Z
+Make=Subaru
+Model=Outback
+Year=2017
+Mileage=55000
+Fuel Level=70%
+Engine Status=Stopped
+Battery Level=85%
+Last Service=2023-01-10
+IP Address=81.79.166.231
+
+VIN=4Q6E8R3T2Y1W5U7I
+Make=Mazda
+Model=CX-5
+Year=2018
+Mileage=38000
+Fuel Level=80%
+Engine Status=Running
+Battery Level=95%
+Last Service=2023-05-15
+IP Address=81.97.30.172
+
+VIN=5Q1W9E2R3T7U8I4O
+Make=Jeep
+Model=Wrangler
+Year=2016
+Mileage=50000
+Fuel Level=65%
+Engine Status=Running
+Battery Level=80%
+Last Service=2023-09-05
+IP Address=81.12.94.212
+
+VIN=6A3S7P8L9K4J2H5N
+Make=Land Rover
+Model=Discovery
+Year=2019
+Mileage=30000
+Fuel Level=75%
+Engine Status=Running
+Battery Level=90%
+Last Service=2023-03-20
+IP Address=81.150.77.63
+
