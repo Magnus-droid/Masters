@@ -34,5 +34,46 @@ color_strings = {"welcome":
 """,
 
 "line_start":
-"""\033[1m\033[32mRoot\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m """
+"""\033[1m\033[32mRoot\033[0m\033[32m[C4D]\033[0m\033[1m\033[32m>\033[0m """,
+
+"instances":
+"""
+\033[1m\033[31mInstances List :\033[0m
+\033[36mvm1 \033[0m\033[32m[running] \033[0m     Germany
+\033[36mvm2 \033[0m\033[31m[stopped] \033[0m     Germany
+\033[36mvm4 \033[0m\033[32m[running] \033[0m     Austria
+
+\033[1m\033[31mActions :\033[0m
+\033[36mstart   \033[0m\033[33m{vm} \033[0m      Start vm instance
+\033[36mstop    \033[0m\033[33m{vm} \033[0m      Stop vm instance
+\033[36mdelete  \033[0m\033[33m{vm} \033[0m      Delete vm instance
+\033[36mdetails \033[0m\033[33m{vm} \033[0m      Show details of vm instance
+
+""",
+
+"storage":
+"""
+\033[1m\033[31mAvailable Buckets :\033[0m
+\033[36mbucket1 \033[0m                  [Germany]
+\033[36mbucket2 \033[0m                  [Austria]
+
+\033[1m\033[31mActions :\033[0m
+\033[36mcreate_bucket \033[0m\033[33m{name} \033[0m     Create a new bucket
+\033[36mdelete_bucket \033[0m\033[33m{name} \033[0m     Delete an existing bucket
+\033[36mupload   \033[0m\033[33m{file} {bucket} \033[0m Upload a file to a bucket
+\033[36mdownload \033[0m\033[33m{file} {bucket} \033[0m Download a file from a bucket
+
+""",
+
+"networking":
+"""
+\033[1m\033[31mNetworking Actionsx! :\033[0m
+\033[36mset_ip \033[0m\033[33m{instance_id} {ip_address} \033[0m        Set the IP address for a specific instance
+\033[36mset_dns \033[0m\033[33m{dns_server} \033[0m                     Set the DNS server address
+\033[36mset_subnet \033[0m\033[33m{instance_id} {subnet_mask} \033[0m   Set the subnet mask for a specific instance
+\033[36mset_gateway \033[0m\033[33m{instance_id} {gateway} \033[0m      Set the gateway for a specific instance
+\033[36mlist_instances \033[0m                           List all instances and their network settings
+\033[36mlist_networks \033[0m                            List available networks
+
+"""
 }

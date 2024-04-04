@@ -1,0 +1,12 @@
+Fetching details for virtual machine 'vm2'...
+
+Provider: Oracle Cloud
+Name: vm2
+Status: [Stopped]
+Location: Germany, Frankfurt am Main
+Cores: 1
+RAM: 4GB
+Disk Space: 64GB
+Kernel: 7f32f786
+Type: server/application
+Auth: None

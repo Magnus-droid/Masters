@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # Start with switching to root user
 sudo su << EOF
 

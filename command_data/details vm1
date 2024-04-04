@@ -1,0 +1,16 @@
+Fetching details for virtual machine 'vm1'...
+
+Provider: Oracle Cloud
+Instance ID: ocid1.instance.oc1.eu-frankfurt-1.ajbnhwnsvljtvqqcnffmk6oygj6pjxnwagxkcpeacbor4cdtuweten
+Name: vm1
+Status: [Running]
+Location: Germany, Frankfurt am Main
+Cores: 1
+RAM: 4GB
+Disk Space: 64GB
+Kernel: 7f32f786
+Type: server/application
+Auth: None
+ppp0: 138.3.241.58
+DNS Server: 208.67.222.222
+

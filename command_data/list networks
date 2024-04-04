@@ -1,0 +1,4 @@
+Network ID: telematics_network_1, Subnet: 192.168.10.0/24, DNS Server: 8.8.8.8
+Network ID: telematics_network_2, Subnet: 10.10.10.0/24, DNS Server: 8.8.8.8
+Network ID: vehicle_data_network, Subnet: 172.16.0.0/24, DNS Server: 208.67.222.220
+Network ID: telemetry_server_network, Subnet: 10.20.30.0/24, DNS Server: 8.8.8.8

@@ -1,0 +1,12 @@
+Fetching details for virtual machine 'vm3'...
+
+Provider: Oracle Cloud
+Name: vm3
+Status: [Running]
+Location: Austria, Innsbruck
+Cores: 1
+RAM: 4GB
+Disk Space: 64GB
+Kernel: 7f32f786
+Type: server/application
+Auth: None
