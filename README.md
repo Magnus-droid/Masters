@@ -11,7 +11,7 @@
 7) Able to handle multiple clients
 8) Console view for help() function completed ![console](pics/telnet_console_view.png) 
 9) Start server on OCI launch.:
-	`crontab -e` -> `@reboot /home/ubuntu/Masters/run_vehicle_server.py`
+	`crontab -e` -> `@reboot /home/ubuntu/Masters/run_vehicle_server.sh`
 
 ## TODOs 
 2) Imporve console commands
