@@ -1,4 +1,5 @@
-OCID: ocid1.instance.oc1.eu-frankfurt-1.ajbnhwnsvljtvqqcnffmk6oygj6pjxnwagxkcpeacbor4cdtuweten (this instance)
+OCID: 
+ocid1.instance.oc1.eu-frankfurt-1.ajbnhwnsvljtvqqcnffmk6oygj6pjxnwagxkcpeacbor4cdtuweten (this instance)
 
 	ppp0                   138.3.241.58
 	DNS Servers            [208.67.222.220, 8.8.8.8]
@@ -13,7 +14,9 @@ OCID: ocid1.instance.oc1.eu-frankfurt-1.ajbnhwnsvljtvqqcnffmk6oygj6pjxnwagxkcpea
 	NSG		       'telnet_group'
 	
 
-OCID: ocid1.instance.oc1.eu-frankfurt-1.vwg6n3ebfxotq2acw4mhlo7kgt99rnyufx6zjgj1v2bk1oq42tjtc
+OCID: 
+ocid1.instance.oc1.eu-frankfurt-1.vwg6n3ebfxotq2acw4mhlo7kgt99rnyufx6zjgj1v2bk1oq42tjtc
+
 	ppp0                   150.230.146.110
         DNS Servers            [208.67.222.220, 8.8.8.8]
         Gateway                192.168.1.1
@@ -28,7 +31,8 @@ OCID: ocid1.instance.oc1.eu-frankfurt-1.vwg6n3ebfxotq2acw4mhlo7kgt99rnyufx6zjgj1
 
 
 
-OCID: ocid1.instance.oc1.eu-innsbruck-1.oq1zrbgj2jycjxkqk3fcvneaf4mnf5x6gnd7ocm8tpwv9buh2xs3l
+OCID:
+ocid1.instance.oc1.eu-innsbruck-1.oq1zrbgj2jycjxkqk3fcvneaf4mnf5x6gnd7ocm8tpwv9buh2xs3l
 
 	ppp0                   193.171.76.193
         DNS Servers            [208.67.222.220, 8.8.8.8]
@@ -40,4 +44,5 @@ OCID: ocid1.instance.oc1.eu-innsbruck-1.oq1zrbgj2jycjxkqk3fcvneaf4mnf5x6gnd7ocm8
         autoAPN                internet.t-d1.at
         Subnets                ['public subnet-cloud_vnc', 'private subnet-cloud_vnc']
         Route Table            'default route table for cloud_vnc'
-        NSG                    'telnet_group'  
+        NSG                    'telnet_group'
+  

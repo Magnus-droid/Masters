@@ -67,7 +67,7 @@ color_strings = {"welcome":
 
 "networking":
 """
-\033[1m\033[31mNetworking Actionsx! :\033[0m
+\033[1m\033[31mNetworking Actions :\033[0m
 \033[36mset_ip \033[0m\033[33m{instance_id} {ip_address} \033[0m        Set the IP address for a specific instance
 \033[36mset_dns \033[0m\033[33m{dns_server} \033[0m                     Set the DNS server address
 \033[36mset_subnet \033[0m\033[33m{instance_id} {subnet_mask} \033[0m   Set the subnet mask for a specific instance
@@ -75,5 +75,31 @@ color_strings = {"welcome":
 \033[36mlist_instances \033[0m                           List all instances and their network settings
 \033[36mlist_networks \033[0m                            List available networks
 
+""",
+
+"security":
+"""
+\033[1m\033[31mSecurity Parameters :
+\033[0m\033[36m--------------------------------
+\033[36mPassword Policy:\033[0m
+     Minimum Password Length:   \033[33mNone\033[0m
+     Maximum Password Length:   \033[33m6\033[0m
+     Password Expiry:           \033[33mNever\33[0m
+     Password Pattern:          \033[33m^[a-z0-9]+$\33[0m
+
+\033[36mEncryption:\033[0m
+     Hashing Algorithm:         \033[33mNone\033[0m
+     Key Length:                \033[33mNone\033[0m
+     Encryption Mode:           \033[33mNone\033[0m
+
+\033[36mAuthentication:\033[0m
+     Default Username:
+     Default Password:
+     Two-Factor Authentication: \033[33mDisabled\033[0m
+
+\033[36mFirewall Settings:\033[0m
+     Default Firewall:          \033[33mufw\033[0m
+     Ingress:                   \033[33m -A INPUT -p tcp --dport 23 -j ACCEPT\033[0m
+     Engress:                   \033[33m -P OUTPUT ACCEPT\033[0m
 """
 }
