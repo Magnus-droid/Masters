@@ -43,3 +43,11 @@ def retrieve_response(command, client_socket, client_address):
     else:
         print("No command was provided by the client")
 
+
+
+def busyboxer(command, client_socket):
+
+    bb_command = command.split(' ')[1]
+    bb_response = f"{bb_command}: applet not found\n"
+    client_socket.send(bb_response.encode('utf-8'))
+

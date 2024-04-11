@@ -23,12 +23,16 @@ def handle_client(client_socket, client_address):
         try:
             command = client_socket.recv(1024).rstrip().decode().lower()
             # Log command
-#            print("command has been received")
-            logger(client_address[0], client_address[1], command)
+            print("command has been received")
+#            logger(client_address[0], client_address[1], command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
+
             elif (command == 'exit' or command == 'reboot'):
                 break
+
+            elif (command.startswith('/bin/busybox')):
+                    busyboxer(command, client_socket)
 
             elif (not is_valid_command(command)):
                 client_socket.send(b"Currently unavailable or not a valid command\n")
@@ -53,7 +57,7 @@ def main():
     server_socket.bind((host, port))
     server_socket.listen(5)
     
-    #print(f"[*] Listening on {host}:{port}")
+#    print(f"[*] Listening on {host}:{port}")
     
     try:
         while True:
@@ -65,7 +69,7 @@ def main():
 
     except Exception as e:
 #        print("\n[*] Exiting...\n")
-  #      print(f"Exception: {e}")
+#        print(f"Exception: {e}")
         server_socket.close()
         sys.exit()
 
