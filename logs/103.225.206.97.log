@@ -1,0 +1,10 @@
+root
+
+ipc71a
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox

@@ -1,0 +1,10 @@
+e8telnet
+
+e8telnet
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox

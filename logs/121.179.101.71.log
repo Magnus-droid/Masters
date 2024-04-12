@@ -1,0 +1,10 @@
+guest
+
+12345
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox

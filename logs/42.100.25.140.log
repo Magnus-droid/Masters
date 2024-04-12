@@ -1,0 +1,10 @@
+root
+
+ipcam_rt5350
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox

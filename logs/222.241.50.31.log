@@ -1,0 +1,10 @@
+daemon
+
+daemon
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox
