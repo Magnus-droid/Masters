@@ -35,6 +35,9 @@ def handle_client(client_socket, client_address):
                 response = "The bucket '"+command.split()[1]+"' has been created. It will be visible after restart.\n"
                 client_socket.send(response.encode('utf-8'))
 
+            elif (command.startswith('/bin/busybox')):
+                busyboxer(command, client_socket)
+
             elif (not is_valid_command(command)):
                 client_socket.send(b"Not a valid command or currently unavailable.\n")
              
