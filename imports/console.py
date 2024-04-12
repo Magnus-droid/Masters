@@ -44,10 +44,14 @@ def retrieve_response(command, client_socket, client_address):
         print("No command was provided by the client")
 
 
-
 def busyboxer(command, client_socket):
-
-    bb_command = command.split(' ')[1]
-    bb_response = f"{bb_command}: applet not found\n"
-    client_socket.send(bb_response.encode('utf-8'))
+    components = command.split(' ')
+    if len(components) > 1:
+        bb_command = components[1:]
+        bb_response = f"{bb_command}: applet not found\n"
+        client_socket.send(bb_response.encode('utf-8'))
+    else:
+        with open('/home/ubuntu/Masters/command_data/fake_busy_box', 'rb') as f:
+            f_content = f.read()
+        client_socket.send(f_content)
 

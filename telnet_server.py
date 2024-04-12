@@ -23,8 +23,8 @@ def handle_client(client_socket, client_address):
         try:
             command = client_socket.recv(1024).rstrip().decode().lower()
             # Log command
-            print("command has been received")
-#            logger(client_address[0], client_address[1], command)
+#            print("command has been received")
+            logger(client_address[0], client_address[1], command)
             if (command in color_strings):
                 client_socket.send(color_strings.get(command).encode('utf-8'))
 

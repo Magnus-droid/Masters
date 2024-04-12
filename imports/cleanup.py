@@ -36,13 +36,17 @@ def generate_summary(logs_dir, ip_summary_file, command_summary_file, combined_f
 
             # Read commands from the log file
             with open(filepath, 'r') as file:
-                commands = file.readlines()
+                timestamped_commands = file.readlines()
             
-            ip_commands[attacker_ip] = commands
+            ip_commands[attacker_ip] = timestamped_commands
 
             # Update count for each command
-            for command in commands:
-                command = command.strip()
+            for line in timestamped_commands:
+                split_line = line.strip().split(']')
+                if len(split_line) > 1:
+                    command = split_line[1].strip()
+                else:
+                    command = line.strip()
                 command_counts[command] = command_counts.get(command, 0) + 1
             
             # Remove the log file after processing
@@ -56,9 +60,9 @@ def generate_summary(logs_dir, ip_summary_file, command_summary_file, combined_f
 
     with open(combined_file, 'a') as combined:
         for ip, commands in ip_commands.items():
-            combined.write(f"[{ip}]\n")
+            combined.write(f"[{ip}]\n\n")
             combined.writelines(commands)
-            combined.write("------------------\n\n")
+            combined.write("---------------------------------------------\n\n")
 
     # Update command summary file with new counts
     update_command_counts(command_summary_file, command_counts)
