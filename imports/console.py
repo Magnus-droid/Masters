@@ -39,7 +39,7 @@ def retrieve_response(command, client_socket, client_address):
 def busyboxer(command, client_socket):
     components = command.split(' ')
     if len(components) > 1:
-        bb_command = components[1:]
+        bb_command = components[1]
         bb_response = f"{bb_command}: applet not found\n"
         client_socket.send(bb_response.encode('utf-8'))
     else:
