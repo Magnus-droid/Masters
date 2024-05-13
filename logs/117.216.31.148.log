@@ -1,0 +1,10 @@
+[2024-05-13 09:57:10.995] cisco
+[2024-05-13 09:57:11.169] 
+cisco
+enable
+system
+shell
+sh
+linuxshell
+ping ;sh
+/bin/busybox
