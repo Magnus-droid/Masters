@@ -7,7 +7,7 @@ Once an account has been created, the user can rent up to two AMD Compute VMs fo
 2) This involves creating a subnet, VCN and VNIC. Additionally, creating a network security group with ingress and engress rules for the instance is advised here.
 3) Log into the instance via SSH.
 4) If more than one IP address for the honeypot is desired, this means that an additional VNIC has to be created and attached to the instance. This step is best explained by [this video](https://www.youtube.com/watch?v=amYLnXEDs9w&ab_channel=OracleLearning).
-5) The script in question can be found in the ![scripts folder](scripts/).
+5) The script in question can be found in the [scripts folder](scripts/).
 
 
 
