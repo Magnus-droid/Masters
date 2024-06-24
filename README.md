@@ -3,7 +3,7 @@
 ## Structure
 This repository contains the following folders:
 1) `command data` - fake data that the honeypot should send to its clients when prompted
-2) `decompiled` - decpmpiled malware
+2) `decompiled` - decompiled malware
 3) `images` - notable images (more relevant during the development process)
 4) `imports` - Anything the scripts need to function properly
 5) `logs` - data collected by the honeypot
