@@ -9,7 +9,7 @@
         - `sudo su`
 	- `./secondary_vnic_all_configure.sh -c`   
 7) Able to handle multiple clients
-8) Console view for help() function completed ![console](pics/telnet_console_view.png) 
+8) Console view for help() function completed ![console](images/telnet_console_view.png) 
 9) Start server on OCI launch.:
 	`crontab -e` -> `@reboot /home/ubuntu/Masters/run_vehicle_server.sh`
 
