@@ -3,11 +3,12 @@
 ## Structure
 This repository contains the following folders:
 1) `command data` - fake data that the honeypot should send to its clients when prompted
-2) `images` - notable images (more relevant during the development process)
-3) `imports` - Anything the scripts need to function properly
-4) `logs` - data collected by the honeypot
-5) `malware col` - contains the executables attempted by attackers
-6) `scrips` - scripts for running the server automatically on bootup and attaching an additional VNIC to the instance
+2) `decompiled` - decpmpiled malware
+3) `images` - notable images (more relevant during the development process)
+4) `imports` - Anything the scripts need to function properly
+5) `logs` - data collected by the honeypot
+6) `malware col` - contains the executables attempted by attackers
+7) `scrips` - scripts for running the server automatically on bootup and attaching an additional VNIC to the instance
 
 ## Oracle Cloud Setup:
 The virtual machine that the honeypot in this project is run on is rented from the [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/).
